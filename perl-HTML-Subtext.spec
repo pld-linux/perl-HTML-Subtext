@@ -9,7 +9,7 @@ Summary:	HTML::Subtext Perl module - performs text substitutions on an HTML temp
 Summary(pl):	Modu³ Perla HTML::Subtext - podmiana tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
 Version:	1.03
-Release:	11
+Release:	12
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
