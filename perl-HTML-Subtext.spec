@@ -1,24 +1,30 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Subtext
-Summary:	HTML::Subtext - Perform text substitutions on an HTML template
+Summary:	HTML::Subtext module - performs text substitutions on an HTML template
+Summary(pl):	Modu³ HTML::Subtext - dokonuj±cy podmiany tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
 Version:	1.03
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C<HTML::Subtext> is a package for performing text substitutions on a
-specially formatted HTML template. The template uses normal HTML markup,
-but includes links of the form:
+HTML::Subtext is a package for performing text substitutions on a
+specially formatted HTML template. The template uses normal HTML
+markup, but includes special links.
+
+%description -l pl
+HTML::Subtext to pakiet dokonuj±cy podmiany tekstu w specjalnie
+sformatowanym szablonie HTML. Szablon u¿ywa normalnych znaczników
+HTML, ale zawiera specjalne odno¶niki.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -32,13 +38,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README
 %{perl_sitelib}/HTML/Subtext.pm
 %{_mandir}/man3/*
