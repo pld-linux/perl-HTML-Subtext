@@ -32,7 +32,7 @@ HTML, ale zawiera specjalne odno¶niki.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
