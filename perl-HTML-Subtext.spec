@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Subtext
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTML-Subtext perl module
 Summary(pl):	Modu³ perla HTML-Subtext
 Name:		perl-HTML-Subtext
 Version:	1.03
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ HTML-Subtext perl module.
 Modu³ perla HTML-Subtext.
 
 %prep
-%setup -q -n HTML-Subtext-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
