@@ -6,7 +6,8 @@ Summary(pl):	Modu³ Perla HTML::Subtext - podmiana tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
 Version:	1.03
 Release:	11
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	94f653b74dee5799efd40f10740ade88
