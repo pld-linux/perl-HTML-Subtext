@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	Subtext
+%define		pdir	HTML
+%define		pnam	Subtext
 Summary:	HTML::Subtext Perl module - performs text substitutions on an HTML template
 Summary(pl):	Modu³ Perla HTML::Subtext - podmiana tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
