@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Subtext
-Summary:	HTML-Subtext perl module
-Summary(pl):	Modu³ perla HTML-Subtext
+Summary:	HTML::Subtext perl module
+Summary(pl):	Modu³ perla HTML::Subtext
 Name:		perl-HTML-Subtext
 Version:	1.03
 Release:	8
@@ -17,10 +17,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML-Subtext perl module.
+HTML::Subtext perl module.
 
 %description -l pl
-Modu³ perla HTML-Subtext.
+Modu³ perla HTML::Subtext.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
