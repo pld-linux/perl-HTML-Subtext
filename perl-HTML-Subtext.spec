@@ -1,11 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Subtext
-Summary:	HTML::Subtext perl module
-Summary(pl):	Modu³ perla HTML::Subtext
+Summary:	HTML::Subtext - Perform text substitutions on an HTML template
 Name:		perl-HTML-Subtext
 Version:	1.03
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,10 +16,9 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML::Subtext perl module.
-
-%description -l pl
-Modu³ perla HTML::Subtext.
+C<HTML::Subtext> is a package for performing text substitutions on a
+specially formatted HTML template. The template uses normal HTML markup,
+but includes links of the form:
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
