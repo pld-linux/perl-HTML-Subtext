@@ -5,7 +5,7 @@ Summary:	HTML::Subtext module - performs text substitutions on an HTML template
 Summary(pl):	Modu³ HTML::Subtext - dokonuj±cy podmiany tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
 Version:	1.03
-Release:	10
+Release:	11
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
