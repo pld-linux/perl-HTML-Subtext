@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Subtext
-Summary:	HTML::Subtext module - performs text substitutions on an HTML template
-Summary(pl):	Modu³ HTML::Subtext - dokonuj±cy podmiany tekstu w szablonie HTML
+Summary:	HTML::Subtext Perl module - performs text substitutions on an HTML template
+Summary(pl):	Modu³ Perla HTML::Subtext - podmiana tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
 Version:	1.03
 Release:	11
