@@ -3,7 +3,7 @@ Summary:	HTML-Subtext perl module
 Summary(pl):	Modu³ perla HTML-Subtext
 Name:		perl-HTML-Subtext
 Version:	1.03
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
