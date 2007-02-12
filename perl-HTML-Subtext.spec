@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	Subtext
 Summary:	HTML::Subtext Perl module - performs text substitutions on an HTML template
-Summary(pl):	Modu≥ Perla HTML::Subtext - podmiana tekstu w szablonie HTML
+Summary(pl.UTF-8):   Modu≈Ç Perla HTML::Subtext - podmiana tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
 Version:	1.03
 Release:	12
@@ -27,10 +27,10 @@ HTML::Subtext is a package for performing text substitutions on a
 specially formatted HTML template. The template uses normal HTML
 markup, but includes special links.
 
-%description -l pl
-HTML::Subtext to pakiet dokonuj±cy podmiany tekstu w specjalnie
-sformatowanym szablonie HTML. Szablon uøywa normalnych znacznikÛw
-HTML, ale zawiera specjalne odno∂niki.
+%description -l pl.UTF-8
+HTML::Subtext to pakiet dokonujƒÖcy podmiany tekstu w specjalnie
+sformatowanym szablonie HTML. Szablon u≈ºywa normalnych znacznik√≥w
+HTML, ale zawiera specjalne odno≈õniki.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
