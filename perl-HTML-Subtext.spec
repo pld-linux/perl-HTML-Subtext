@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	HTML
 %define		pnam	Subtext
+%include	/usr/lib/rpm/macros.perl
 Summary:	HTML::Subtext Perl module - performs text substitutions on an HTML template
 Summary(pl.UTF-8):	Moduł Perla HTML::Subtext - podmiana tekstu w szablonie HTML
 Name:		perl-HTML-Subtext
@@ -15,9 +15,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	94f653b74dee5799efd40f10740ade88
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/HTML-Subtext/
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
